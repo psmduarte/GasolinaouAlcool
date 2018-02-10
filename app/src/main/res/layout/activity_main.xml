@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94bd31"
+    tools:context="gasolinaoualcool.cursoandroid.com.gasolinaoualcool.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="16dp"
+        android:text="Preço do Alcool"
+        android:textColor="#415c00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/precoAlcoolId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:text="Preço da Gasolina"
+        android:textColor="#415C00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/precoAlcoolId"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="@dimen/paddinga_caixa_texto"
+        app:layout_constraintBaseline_toBaselineOf="@+id/precoGasolinaId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/precoGasolinaId"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="181dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="181dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="@dimen/paddinga_caixa_texto"
+        app:layout_constraintBottom_toBottomOf="@+id/textoResultadoId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/precoAlcoolId"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/botaoVerificarId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:text="@string/texto_botao_verificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoResultadoId"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoVerificarId" />
+</android.support.constraint.ConstraintLayout>
